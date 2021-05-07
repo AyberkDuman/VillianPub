@@ -74,7 +74,7 @@ body {
     grid-column: 2/-1;
     grid-row: 1/2;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .right-content-form {
@@ -170,3 +170,6 @@ body {
     color: #14171A;
     font-weight: 400;
 }
+
+/* END footer */
+

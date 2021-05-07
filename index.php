@@ -55,18 +55,22 @@
 
         <!-- right -->
         <div class="right">
-            <div class="right-content-form">
-                        <form>
-                            <h2>Sign In</h2>
-                            <input type="text" name="" placeholder="Username" />
-                            <input type="password" name="" placeholder="Password" />
-                            <input type="submit" name="" value="Login" />
-                            <p class="signup">Don't have an account yet ? <a href="#" onclick="toggleForm();" >Sign up</a></p>
-                        </form>
-            </div>    
+
+            
+        <div class="right-content-form">
+            <form>
+                <h2>Sign In</h2>
+                    <input type="text" name="" placeholder="Username" />
+                    <input type="password" name="" placeholder="Password" />
+                    <input type="submit" name="" value="Login" />
+                    <p class="signup">Don't have an account yet ? <a href="#" >Sign up</a></p>
+            </form>
+        </div>    
+
         </div>
         <!-- END right -->
 
+        
         
      <!-- footer -->
      <footer class="main-page-footer" >
@@ -84,19 +88,8 @@
         </ul>
      </footer>
 
-
-
-
       <!-- END footer -->
-
-
-
-
-
     </section>
-
-
-
 
   <!-- lib -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -110,6 +103,21 @@
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="lib/sticky/sticky.js"></script>
   <script src="js/main.js"></script>
+
+
+
+  <!-- LOGIN -->
+
+
+
+
+
+
+  <!-- END LOGIN -->
+
+
+
+
 
 </body>
 </html>
