@@ -84,12 +84,21 @@
         function kontrolet($sayfa) {
 
             if( isset($_COOKIE["kulbilgi"]) ):
-                if( $sayfa=="ind" ) : header("Location:feed.php"); endif;
+                //if( $sayfa=="ind" ) : header("Location:feed.php"); endif;
              
             else:
-               if( $sayfa=="fed" ) : header("Location:index.php"); endif;
+               //if( $sayfa=="fed" ) : header("Location:index.php"); endif;
                 
             endif;
+        }
+
+        function kulekle($kulad, $sifre, $vt) {
+
+            $sifrelihal = md5(sha1(md5($sifre)));
+
+            $sor=$vt->prepare("INSERT INTO users (kulad, sifre) VALUES ('$kulad', '$sifrelihal') "); 
+            $sor->execute();
+
         }
     
 

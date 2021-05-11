@@ -173,3 +173,16 @@ body {
 
 /* END footer */
 
+/* signup Box  */
+
+.box {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/* END signup Box  */
