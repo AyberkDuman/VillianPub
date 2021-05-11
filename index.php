@@ -1,3 +1,9 @@
+<?php
+include_once("fonk.php");
+$users = new users;
+$users -> kontrolet("ind");
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <head>
@@ -19,59 +25,78 @@
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
+   <!-- lib -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+  <script src="js/main.js"></script>
+
+
   <!-- style -->
   <link href="css/style.css" rel="stylesheet">
   <link href="img/favicon.jpg" rel="shortcut icon">
+
+  <!-- sweetalert -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  
 
 
 </head>
 
 <body>
     
-    <!-- main page -->
-    <section class="main-page">
+   
+    <!-- LOGIN -->
+      <?php
+
+      if (!$_POST):
+      ?>
+
+        <section class="main-page">
         <!-- left -->
-        <div class="left">
-            <div class="left-content">
-                <div>
-                <img src="img/favicon.jpg" alt="villainPub" width="180" height="180">
-                <h1 class="left-content-logoHeading">Villians need friends too!</h1>
-                </div>
-                <div>
-                <img src="img/ghosts.svg" alt="ghost" width="60" height="60">
-                <h3 class="left-content-heading">Find new friends, or old nemesis</h3>
-                </div>
-                <div>
-                <img src="img/frankenstein.svg" alt="frankenstein" width="60" height="60">
-                <h3 class="left-content-heading">Set up socialization</h3>
-                </div>
-                <div>
-                <img src="img/scarecrow.svg" alt="scarecrow" width="60" height="60">
-                <h3 class="left-content-heading">Look for new ways to commit attrocitries from like-minded peers</h3>
+            <div class="left">
+                <div class="left-content">
+                    <div>
+                    <img src="img/favicon.jpg" alt="villainPub" width="180" height="180">
+                    <h1 class="left-content-logoHeading">Villians need friends too!</h1>
+                    </div>
+                    <div>
+                    <img src="img/ghosts.svg" alt="ghost" width="60" height="60">
+                    <h3 class="left-content-heading">Find new friends, or old nemesis</h3>
+                    </div>
+                    <div>
+                    <img src="img/frankenstein.svg" alt="frankenstein" width="60" height="60">
+                    <h3 class="left-content-heading">Set up socialization</h3>
+                    </div>
+                    <div>
+                    <img src="img/dracula.svg" alt="dracula" width="60" height="60">
+                    <h3 class="left-content-heading">Look for new ways to commit attrocitries from like-minded peers</h3>
+                    </div>
                 </div>
             </div>
-        </div>
         <!-- END left -->
 
         <!-- right -->
-        <div class="right">
-
-            
+        <div class="right">  
         <div class="right-content-form">
-            <form>
+            <form action="" method="post" >
                 <h2>Sign In</h2>
-                    <input type="text" name="" placeholder="Username" />
-                    <input type="password" name="" placeholder="Password" />
-                    <input type="submit" name="" value="Login" />
+                    <input type="text" name="kulad" placeholder="Username" />
+                    <input type="password" name="sifre" placeholder="Password" />
+                    <input type="submit" value="Login" />
                     <p class="signup">Don't have an account yet ? <a href="#" >Sign up</a></p>
             </form>
-        </div>    
-
+        </div> 
         </div>
         <!-- END right -->
-
-        
-        
+     
      <!-- footer -->
      <footer class="main-page-footer" >
         <ul>
@@ -87,36 +112,31 @@
             <b>@2021 VillianPub by Ayberk Duman</b>
         </ul>
      </footer>
-
-      <!-- END footer -->
-    </section>
-
-  <!-- lib -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/sticky/sticky.js"></script>
-  <script src="js/main.js"></script>
+     <!-- END footer -->
+     </section>
+     <!-- END main --> 
+       <?php
 
 
+        else:
+            $kulad=htmlspecialchars ($_POST["kulad"]);
+            $sifre=htmlspecialchars ($_POST["sifre"]);
 
-  <!-- LOGIN -->
+            if($kulad == "" && $sifre == ""):
+            echo '<script>Swal.fire("Oops", "form can not be empty !", "error"); </script>';
+            header("refresh:2, url=index.php");
+            
+            
+            else:
+            $users->giriskontrol($kulad, $sifre, $baglanti);
+        
+            endif;
 
+        endif;
 
-
-
-
-
-  <!-- END LOGIN -->
-
-
-
+      ?>
+      
+      <!-- END LOGIN -->
 
 
 </body>
