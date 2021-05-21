@@ -33,6 +33,7 @@ $users -> kontrolet("fed");
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="lib/sticky/sticky.js"></script>
   <script src="js/main.js"></script>
+  
 
   <!-- style -->
   <link href="css/style.css" rel="stylesheet">
@@ -161,14 +162,73 @@ $users -> kontrolet("fed");
 		</div>
 		<!-- FEEDS CONTENT END -->
 
+
+		<!-- POST BUTTON -->
 		<button type="button" class="post-btn">
 			<i class="fas fa-feather-alt"></i>Post
 		</button>
+		<!-- POST BUTTON END -->
+
+
+		<!-- SIDEBAR -->
+		<div class="sidebar-wrapper">
+			<div class="sidebar">
+				<div class="sidebar-header">
+					<h2>Account Info</h2>
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="sidebar-user">
+					<div class="sidebar-user-img">
+						<img src="img/reaper.svg"/>
+					</div>
+				</div>
+				<div class="sidebar-user-info">
+					<h4>User Name</h4>
+				</div>
+				<div class="following">
+					<p class="following-paragraph">
+					<span>5 </span>Following
+					</p>
+					<p class="following-paragraph">
+					<span>3 </span>Followers
+					</p>
+				</div>
+				<div class="sidebar-list-1">
+					<ul>
+						<li><a href="#">
+						<i class="fas fa-user"></i>Profile
+						</a></li>
+						<li><a href="#">
+						<i class="far fa-list-alt"></i>List
+						</a></li>
+						<li><a href="#">
+						<i class="far fa-bookmark"></i>Bookmarks
+						</a></li>
+						<li><a href="#">
+						<i class="fab fa-adversal"></i>Ads
+						</a></li>
+						<li><a href="#">
+						<i class="fas fa-chart-line"></i>Analytics
+						</a></li>
+					</ul>
+				</div>
+				<div class="sidebar-list-2">
+					<ul>
+						<li><a href="#">Settings</a></li>
+						<li><a href="#">Help Center</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- SIDEBAR END -->
+
+
+
 
 	</section>
 
 
-
-
 </body>
 </html>
+<script src="Script.js"></script>
