@@ -50,7 +50,7 @@ $users -> kontrolet("fed");
 		<!-- feeds nav -->
 		<nav class="feeds-nav">
 			<div class="icons">
-			<a href="#" class="active"><i class="fas fa-home"></i></a>
+			<a href="feed.php"><i class="fas fa-home"></i></a>
 			<a href="#"><i class="fas fa-hashtag"></i></a>
 			<a href="#"><i class="fas fa-bell"></i></a>
 			<a href="#"><i class="fas fa-envelope"></i></a>
@@ -66,7 +66,7 @@ $users -> kontrolet("fed");
 				<img src="img/reaper.svg" width="40" />
 				</div>
 			
-				<a href="#" class="user-link">ayberk</a>
+				<a href="#" class="user-link">AYBERK</a>
 				
 			</div>
 		</nav>
@@ -76,7 +76,7 @@ $users -> kontrolet("fed");
 		<div class="feeds-content">
 			<div class="feeds-header" >
 				<div class="header-top">
-					<h4>Home</h4>
+					<h4>Profile</h4>
 					<i class="far fa-star"></i>
 				</div>
 				<div class="header-post">
@@ -92,70 +92,46 @@ $users -> kontrolet("fed");
 
 
 			<div class="posts">
+
+				<div class="post">
+					<div class="user-avatar">
+						<img src="img/reaper.svg"/>
+					</div>	
+					<div class="post-content">
+						<div class="post-user-info">
+							<h4>AYBERK</h4>
+							<span>@AYBERK 35m</span>
+						</div>
+						<div class="post-img">
+							<img src="img/vader.jpg"/>
+						</div>
+						<div class="post-icons">
+						<i class="far fa-comment"></i>
+						<i class="far fa-retweet"></i>
+						<i class="far fa-heart"></i>
+						<i class="far fa-share-alt"></i>
+						</div>
+					</div>
+				</div>	
+				<div class="post">
+					<div class="user-avatar">
+						<img src="img/reaper.svg"/>
+					</div>	
+					<div class="post-content">
+						<div class="post-user-info">
+							<h4>AYBERK</h4>
+							<span>@AYBERK 37m</span>
+						</div>
+						<p class="post-text">Hi, i am new here !</p>
+						<div class="post-icons">
+						<i class="far fa-comment"></i>
+						<i class="far fa-retweet"></i>
+						<i class="far fa-heart"></i>
+						<i class="far fa-share-alt"></i>
+						</div>
+					</div>
+				</div>	
 				
-				<div class="post">
-					<div class="user-avatar">
-						<img src="img/witch.svg"/>
-					</div>	
-					<div class="post-content">
-						<div class="post-user-info">
-							<h4>Witch</h4>
-							<span>@Witch 15m</span>
-						</div>
-						<p class="post-text">Email: Do not reply to this email<br>Me: replies to email</p>
-						<div class="post-img">
-							<img src="img/Skeletor.png"/>
-						</div>
-						<div class="post-icons">
-						<i class="far fa-comment"></i>
-						<i class="far fa-retweet"></i>
-						<i class="far fa-heart"></i>
-						<i class="far fa-share-alt"></i>
-						</div>
-					</div>
-				</div>	
-
-				<div class="post">
-					<div class="user-avatar">
-						<img src="img/robot.svg"/>
-					</div>	
-					<div class="post-content">
-						<div class="post-user-info">
-							<h4>ULTRON</h4>
-							<span>@ULTRON 18m</span>
-						</div>
-						<p class="post-text">You shut me out! You'd think I care?! You take away my world, I'll take away yours<br>beep boop !</p>
-						<div class="post-icons">
-						<i class="far fa-comment"></i>
-						<i class="far fa-retweet"></i>
-						<i class="far fa-heart"></i>
-						<i class="far fa-share-alt"></i>
-						</div>
-					</div>
-				</div>	
-
-				<div class="post">
-					<div class="user-avatar">
-						<img src="img/alien.svg"/>
-					</div>	
-					<div class="post-content">
-						<div class="post-user-info">
-							<h4>alien</h4>
-							<span>@alien 24m</span>
-						</div>
-						<p class="post-text">HELLO from area 51 :)</p>
-						<div class="post-img">
-							<img src="img/allienpost.jpeg"/>
-						</div>
-						<div class="post-icons">
-						<i class="far fa-comment"></i>
-						<i class="far fa-retweet"></i>
-						<i class="far fa-heart"></i>
-						<i class="far fa-share-alt"></i>
-						</div>
-					</div>
-				</div>	
-
 			</div>
 
 			<div class="follow">
@@ -205,13 +181,6 @@ $users -> kontrolet("fed");
 		<!-- FEEDS CONTENT END -->
 
 
-		<!-- POST BUTTON -->
-		<button type="button" class="post-btn">
-			<i class="fas fa-feather-alt"></i>Post
-		</button>
-		<!-- POST BUTTON END -->
-
-
 		<!-- SIDEBAR -->
 		<div class="sidebar-wrapper">
 			<div class="sidebar">
@@ -225,7 +194,7 @@ $users -> kontrolet("fed");
 					</div>
 				</div>
 				<div class="sidebar-user-info">
-					<h4>AYBERK</h4>
+					<h4>ayberk</h4>
 				</div>
 				<div class="following">
 					<p class="following-paragraph">
@@ -237,7 +206,7 @@ $users -> kontrolet("fed");
 				</div>
 				<div class="sidebar-list-1">
 					<ul>
-						<li><a href="profile.php">
+						<li><a href="#">
 						<i class="fas fa-user"></i>Profile
 						</a></li>
 						<li><a href="#">

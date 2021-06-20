@@ -62,7 +62,7 @@ $users -> kontrolet("fed");
         <div class="right-content-form">
             <form action="" method="post" >
                 <h2>Create an Account</h2>
-                 <input type="text" name="kulad" placeholder="Username" />
+                 <input type="text" name="kulad" placeholder="Enter Username" />
                  <input type="password" name="sifre" placeholder="Create Password" />
                  <input type="submit" name="" value="Sign Up" />
                  <p class="signup">Already have an account <a href="index.php">Sign In</a></p>

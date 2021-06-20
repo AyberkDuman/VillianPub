@@ -59,7 +59,7 @@ $users -> kontrolet("ind");
                 <div class="left-content">
                     <div>
                     <img src="img/favicon.jpg" alt="villainPub" width="180" height="180">
-                    <h1 class="left-content-logoHeading">Villians need friends too!</h1>
+                    <h1 class="left-content-logoHeading">Villains need friends too!</h1>
                     </div>
                     <div>
                     <img src="img/ghosts.svg" alt="ghost" width="60" height="60">
@@ -103,7 +103,7 @@ $users -> kontrolet("ind");
             <li><a href="#">Developers</a></li>
             <li><a href="#">Bussines</a></li>
             <li><a href="#">Settings</a></li>
-            <b>@2021 VillianPub by Ayberk Duman</b>
+            <b>@2021 VillainPub by Ayberk Duman</b>
         </ul>
      </footer>
      <!-- END footer -->
