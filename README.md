@@ -10,7 +10,8 @@ required php server to run, i used xampp.
 
 there is a few screenshots below from my project.
 
-![alt text](https://github.com/AyberkDuman/VillianPub/tree/master/ss/SignInPage.PNG)
-![alt text](https://github.com/AyberkDuman/VillianPub/tree/master/ss/feedPage.PNG)
-![alt text](https://github.com/AyberkDuman/VillianPub/tree/master/ss/SideBar.PNG)
-![alt text](https://github.com/AyberkDuman/VillianPub/tree/master/ss/profilePage.PNG)
+<img src="/ss/SignInPage.PNG">
+<img src="/ss/feedPage.PNG">
+<img src="/ss/SideBar.PNG">
+<img src="/ss/profilePage.PNG">
+
